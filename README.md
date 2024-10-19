@@ -22,6 +22,7 @@
 
 ### To implement
 - [x] Player that moves
+    - [x] Camera follows player
 - [ ] Basic enemy
 - [ ] Enemy pathfinding
 - [ ] Health

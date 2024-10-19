@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Teo : MonoBehaviour
 {
-	public float moveSpeed;
+	public float moveSpeed = 10F;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
