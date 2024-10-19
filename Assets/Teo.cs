@@ -6,16 +6,15 @@ public class Teo : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-		transform.Translate(
-			Input.GetAxis("Horizontal")*moveSpeed*Time.deltaTime,
-			Input.GetAxis("Vertical")*moveSpeed*Time.deltaTime,
-			0
-		);
+		Rigidbody2D controller = GetComponent<Rigidbody2D>();
+		controller.linearVelocity = new Vector2 (
+			Input.GetAxis("Horizontal"),
+			Input.GetAxis("Vertical")
+		).normalized * moveSpeed;
 	}
 }
