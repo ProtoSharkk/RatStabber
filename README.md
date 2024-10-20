@@ -42,7 +42,7 @@
 
 
 ### Enemy:
-- [ ] All Enemies have simple pathfinding towards the player
+- [x] All Enemies have simple pathfinding towards the player
 - [ ] When enemy touches player - remove health (scaled with x amount of rounds)
 - [ ] When object summoned / thrown by enemy, remove health (smaller scaling)
 
