@@ -33,7 +33,7 @@
 - [x] Health
 - [x] Enemy takes health when touches
 - [ ] Enemy health bar
-- [ ] Sword that points to mouse cursor
+- [x] Sword that points to mouse cursor
 - [ ] Sword swings when click
 - [ ] Sword damages enemies in swing area
 - [ ] Wave spawns enemies
