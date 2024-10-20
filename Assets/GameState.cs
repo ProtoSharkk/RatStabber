@@ -5,7 +5,6 @@ public class GameState : MonoBehaviour
 	public string state;
 	public uint wave = 1;
 	public GameObject ratbot;
-
 	void Start() {
 		NewWave();
 	}
@@ -30,6 +29,7 @@ public class GameState : MonoBehaviour
 		for (uint _ = 0; _ < wave; _++) {
 			GameObject newRatbot = Instantiate(ratbot);
 			newRatbot.GetComponent<Ratbot>().damageStrength = 5+wave*5;
+			newRatbot.GetComponent<Ratbot>().health = 5+wave*2;
 		}
 		wave++;
 	}

@@ -5,6 +5,7 @@ public class Ratbot : MonoBehaviour
 	public float moveSpeed;
 	public float damageStrength;
 	public float damageTimeoutSeconds;
+	public float health = 10;
 	float lastDamageTime;
 	GameState gameState;
 	GameObject player;
@@ -28,5 +29,11 @@ public class Ratbot : MonoBehaviour
 		if (lastDamageTime > Time.fixedTime-damageTimeoutSeconds) return;
 		lastDamageTime = Time.fixedTime;
 		collision.gameObject.GetComponent<Teo>().health -= damageStrength;
+	}
+	public void Damage(float hurtyAmount) {
+		health -= hurtyAmount;
+		if (health <= 0) {
+			Destroy(gameObject);
+		}
 	}
 }
