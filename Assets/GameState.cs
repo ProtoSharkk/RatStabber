@@ -25,9 +25,13 @@ public class GameState : MonoBehaviour
 	}
 	public void NewWave() {
 		state = "WAVE";
-		Vector3 position = GameObject.FindGameObjectWithTag("Player").transform.position;
+		Vector3 playerPosition = GameObject.FindGameObjectWithTag("Player").GetComponent<Teo>().transform.position;
 		for (uint _ = 0; _ < wave; _++) {
-			GameObject newRatbot = Instantiate(ratbot);
+			GameObject newRatbot = Instantiate(
+				ratbot,
+				Random.insideUnitCircle.normalized*20,
+				Quaternion.identity
+			);
 			newRatbot.GetComponent<Ratbot>().damageStrength = 5+wave*5;
 			newRatbot.GetComponent<Ratbot>().health = 5+wave*2;
 		}
