@@ -31,7 +31,7 @@
 - [x] Player that moves
     - [x] Camera follows player
 - [x] Health
-- [ ] Enemy takes health when touches
+- [x] Enemy takes health when touches
 - [ ] Enemy health bar
 - [ ] Sword that points to mouse cursor
 - [ ] Sword swings when click
@@ -39,7 +39,6 @@
 - [ ] Wave spawns enemies
 - [ ] Detect when wave ends
 - [ ] Activate new waves after powerup has been chosen by player
-
 
 ### Enemy:
 - [x] All Enemies have simple pathfinding towards the player

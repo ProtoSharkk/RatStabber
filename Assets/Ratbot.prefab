@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3449798187735636588}
   m_Layer: 0
   m_Name: Ratbot
-  m_TagString: Untagged
+  m_TagString: Ratbot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 9.3
+  damageTimeoutSeconds: 0.5
 --- !u!61 &8441426735084966298
 BoxCollider2D:
   m_ObjectHideFlags: 0
