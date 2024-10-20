@@ -107,6 +107,7 @@ MonoBehaviour:
   moveSpeed: 15
   swingRange: 2
   damageStrength: 10
+  attackCooldownSeconds: 2
 --- !u!50 &-4152331571693237436
 Rigidbody2D:
   serializedVersion: 5

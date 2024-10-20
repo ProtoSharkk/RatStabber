@@ -6,8 +6,10 @@ public class Teo : MonoBehaviour
 	public float moveSpeed = 10;
 	public float swingRange = 3;
 	public float damageStrength = 10;
+	public float attackCooldownSeconds = 2;
 	Rigidbody2D controller;
 	GameState gameState;
+	float lastAttackTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
 		controller = GetComponent<Rigidbody2D>();
@@ -16,12 +18,15 @@ public class Teo : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
+		// Move player
 		controller.linearVelocity = new Vector2 (
 			Input.GetAxis("Horizontal"),
 			Input.GetAxis("Vertical")
 		).normalized * moveSpeed;
 
-		if (Input.GetMouseButtonDown(0)) {
+		// Attack on click if not on cooldown
+		if (Input.GetMouseButtonDown(0) && Time.fixedTime > lastAttackTime + attackCooldownSeconds) {
+			// Get all objects in range in the direction of cursor
 			RaycastHit2D[] hits = Physics2D.CircleCastAll(
 				transform.position,
 				swingRange,
@@ -30,6 +35,7 @@ public class Teo : MonoBehaviour
 					Screen.height/2 - Input.mousePosition.y
 				)
 			);
+			// Damage all ratbots in scanned area
 			foreach (RaycastHit2D hit in hits) {
 				Ratbot ratbot = hit.collider.GetComponent<Ratbot>();
 				if (ratbot == null) continue;

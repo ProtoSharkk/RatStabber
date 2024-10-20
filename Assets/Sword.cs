@@ -11,6 +11,7 @@ public class Sword : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		// Point sword towards mouse cursor with garbage trig
 		transform.rotation = Quaternion.Euler(
 			new Vector3 (0, 0, Mathf.Atan2(
 				Screen.height/2 - Input.mousePosition.y,

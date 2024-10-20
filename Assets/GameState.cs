@@ -24,8 +24,10 @@ public class GameState : MonoBehaviour
 		
 	}
 	public void NewWave() {
+		// Spawn ratbots around the player
+		// Amount, health, and damage scale with waves
 		state = "WAVE";
-		Vector3 playerPosition = GameObject.FindGameObjectWithTag("Player").GetComponent<Teo>().transform.position;
+		Vector3 playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
 		for (uint _ = 0; _ < wave; _++) {
 			GameObject newRatbot = Instantiate(
 				ratbot,
