@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Teo : MonoBehaviour
 {
-	public float health = 100F;
-	public float moveSpeed = 10F;
+	public float health = 100;
+	public float moveSpeed = 10;
 	Rigidbody2D controller;
 	GameState gameState;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
