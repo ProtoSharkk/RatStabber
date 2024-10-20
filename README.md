@@ -30,7 +30,7 @@
 ### Player/Game:
 - [x] Player that moves
     - [x] Camera follows player
-- [ ] Health
+- [x] Health
 - [ ] Enemy takes health when touches
 - [ ] Enemy health bar
 - [ ] Sword that points to mouse cursor
