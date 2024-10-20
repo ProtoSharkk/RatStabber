@@ -5,12 +5,14 @@ public class Ratbot : MonoBehaviour
 	public float moveSpeed;
 	public float damageStrength;
 	public float damageTimeoutSeconds;
-	GameObject player;
 	float lastDamageTime;
+	GameState gameState;
+	GameObject player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 		player = GameObject.FindGameObjectWithTag("Player");
+		gameState = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameState>();
     }
 
     // Update is called once per frame

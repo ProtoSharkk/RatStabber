@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 9.3
+  damageStrength: 10
   damageTimeoutSeconds: 0.5
 --- !u!61 &8441426735084966298
 BoxCollider2D:
