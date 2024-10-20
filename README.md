@@ -35,9 +35,9 @@
 - [ ] Enemy health bar
 - [x] Sword that points to mouse cursor
 - [ ] Sword swings when click
-- [ ] Sword damages enemies in swing area
-- [ ] Wave spawns enemies
-- [ ] Detect when wave ends
+- [x] Sword damages enemies in swing area
+- [x] Wave spawns enemies
+- [x] Detect when wave ends
 - [ ] Activate new waves after powerup has been chosen by player
 
 ### Enemy:
@@ -48,7 +48,7 @@
 
 
 ### In-Game UI:
-- [ ] Player health on bottom left
+- [x] Player health on bottom left
 - [ ] Round / Wave on bottom left (?)
 - [ ] Maybe show enemy remaining count? (We can make a hard mode that removes UI except health)
 - [ ] Upon round end, pop-up menu for selecting powerup
