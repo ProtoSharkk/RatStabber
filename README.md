@@ -39,6 +39,7 @@
 - [x] Wave spawns enemies
 - [x] Detect when wave ends
 - [ ] Activate new waves after powerup has been chosen by player
+- [ ] Dash ability
 
 ### Enemy:
 - [x] All Enemies have simple pathfinding towards the player
@@ -52,6 +53,14 @@
 - [ ] Round / Wave on bottom left (?)
 - [ ] Maybe show enemy remaining count? (We can make a hard mode that removes UI except health)
 - [ ] Upon round end, pop-up menu for selecting powerup
+    - [ ] Damage
+    - [ ] Attack distance
+    - [ ] Attack range
+    - [ ] Attack cooldown
+    - [ ] Health
+    - [ ] Speed
+    - [ ] Dash cooldown
+    - [ ] Dash distance
 
 
 ### UI / AUDIO:

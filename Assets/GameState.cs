@@ -5,30 +5,32 @@ public class GameState : MonoBehaviour
 	public string state;
 	public uint wave = 1;
 	public GameObject ratbot;
+	public GameObject shop;
 	void Start() {
-		NewWave();
+		OpenShop();
 	}
 
     // Update is called once per frame
     void Update()
     {
         if (GameObject.FindGameObjectsWithTag("Ratbot").Length == 0 && state == "WAVE") {
-			OpenShop();
+			NewWave();
 		}
     }
 	void OpenShop() {
 		state = "SHOP";
-		NewWave();
+		Instantiate(shop);
 	}
 	void CloseShop() {
-		
+		Destroy(GameObject.FindGameObjectWithTag("Shop"));
+		NewWave();		
 	}
 	public void NewWave() {
 		// Spawn ratbots around the player
 		// Amount, health, and damage scale with waves
 		state = "WAVE";
 		Vector3 playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
-		for (uint _ = 0; _ < wave; _++) {
+		for (uint _ = 0; _ <= wave; _++) {
 			GameObject newRatbot = Instantiate(
 				ratbot,
 				Random.insideUnitCircle.normalized*20,
