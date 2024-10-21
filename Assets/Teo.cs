@@ -11,9 +11,9 @@ public class Teo : MonoBehaviour
 	public float attackCooldownSeconds = 10;
 	public float dashDistance = 5;
 	public float dashCooldownSeconds = 5;
+	public float lastAttackTime = 0;
 	Rigidbody2D controller;
 	GameState gameState;
-	float lastAttackTime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
 		controller = GetComponent<Rigidbody2D>();
@@ -27,7 +27,6 @@ public class Teo : MonoBehaviour
 			Input.GetAxis("Horizontal"),
 			Input.GetAxis("Vertical")
 		).normalized * moveSpeed;
-
 		// Attack on click if not on cooldown
 		if (Input.GetMouseButtonDown(0)) {
 			Attack();
@@ -35,7 +34,7 @@ public class Teo : MonoBehaviour
 		}
 	}
 	void Attack() {
-		if (Time.fixedTime-attackCooldownSeconds > lastAttackTime) {
+		if (Time.fixedTime-lastAttackTime < attackCooldownSeconds) {
 			return;
 		}
 		// Get all objects in range in the direction of cursor

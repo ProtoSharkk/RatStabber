@@ -112,6 +112,7 @@ MonoBehaviour:
   attackCooldownSeconds: 2
   dashDistance: 5
   dashCooldownSeconds: 5
+  lastAttackTime: 0
 --- !u!50 &-4152331571693237436
 Rigidbody2D:
   serializedVersion: 5
