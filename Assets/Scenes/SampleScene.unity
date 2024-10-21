@@ -314,6 +314,10 @@ PrefabInstance:
       propertyPath: m_RenderPostProcessing
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
+      propertyPath: attackCooldownSeconds
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
@@ -851,7 +855,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1394869898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07e7096bcd8103c3faadeefc30c8a2f4, type: 3}
+  m_Script: {fileID: 11500000, guid: d13803709cc4d9259a92b5dc9f49fe05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1873397570
