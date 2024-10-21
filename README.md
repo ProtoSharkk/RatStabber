@@ -38,7 +38,7 @@
 - [x] Sword damages enemies in swing area
 - [x] Wave spawns enemies
 - [x] Detect when wave ends
-- [ ] Activate new waves after powerup has been chosen by player
+- [x] Activate new waves after powerup has been chosen by player
 - [ ] Dash ability
 
 ### Enemy:
@@ -53,12 +53,12 @@
 - [ ] Round / Wave on bottom left (?)
 - [ ] Maybe show enemy remaining count? (We can make a hard mode that removes UI except health)
 - [ ] Upon round end, pop-up menu for selecting powerup
-    - [ ] Damage
+    - [x] Damage
     - [ ] Attack distance
     - [ ] Attack range
     - [ ] Attack cooldown
-    - [ ] Health
-    - [ ] Speed
+    - [x] Health
+    - [x] Speed
     - [ ] Dash cooldown
     - [ ] Dash distance
 
