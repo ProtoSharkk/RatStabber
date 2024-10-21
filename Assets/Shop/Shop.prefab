@@ -426,6 +426,7 @@ GameObject:
   - component: {fileID: 3590707166687547973}
   - component: {fileID: 1810765289951295939}
   - component: {fileID: 6948310827531985872}
+  - component: {fileID: 8292507549941480182}
   m_Layer: 5
   m_Name: Attack cooldown
   m_TagString: Untagged
@@ -535,6 +536,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8292507549941480182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2210501121582206525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8661788ccc10d9fd9d1c9c2019bf2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: attackCooldown
 --- !u!1 &2887698150694367543
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +808,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9022882910902225455}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8976493928633758931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -807,6 +833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8661788ccc10d9fd9d1c9c2019bf2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgrade: attackRange
 --- !u!1 &3627401992951871319
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,6 +846,7 @@ GameObject:
   - component: {fileID: 2821706185741727598}
   - component: {fileID: 3110222457101526497}
   - component: {fileID: 8432436027514883370}
+  - component: {fileID: 8840007392823723187}
   m_Layer: 5
   m_Name: MaxHealth
   m_TagString: Untagged
@@ -928,6 +956,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8840007392823723187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3627401992951871319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8661788ccc10d9fd9d1c9c2019bf2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: maxHealth
 --- !u!1 &4009611485654107892
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +981,7 @@ GameObject:
   - component: {fileID: 7049970464721467105}
   - component: {fileID: 2564473379772258309}
   - component: {fileID: 8138113010104631979}
+  - component: {fileID: 7109060488210492449}
   m_Layer: 5
   m_Name: Attack distance
   m_TagString: Untagged
@@ -954,7 +996,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4009611485654107892}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1049,6 +1091,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7109060488210492449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4009611485654107892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8661788ccc10d9fd9d1c9c2019bf2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: attackDistance
 --- !u!1 &4405246042370862087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1254,7 @@ GameObject:
   - component: {fileID: 5981939164284974902}
   - component: {fileID: 890000750688743583}
   - component: {fileID: 5853020247942286769}
+  - component: {fileID: 8784410885912804585}
   m_Layer: 5
   m_Name: MovementSpeed
   m_TagString: Untagged
@@ -1308,6 +1364,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8784410885912804585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4542619955881930688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8661788ccc10d9fd9d1c9c2019bf2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: movementSpeed
 --- !u!1 &4600683873005582980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,6 +1389,7 @@ GameObject:
   - component: {fileID: 7340421460904404424}
   - component: {fileID: 6194428655250020225}
   - component: {fileID: 5203349972573605328}
+  - component: {fileID: 8977407190248410836}
   m_Layer: 5
   m_Name: Damage
   m_TagString: Untagged
@@ -1429,6 +1499,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8977407190248410836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600683873005582980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8661788ccc10d9fd9d1c9c2019bf2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: attackDamage
 --- !u!1 &4791604686138271717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1524,7 @@ GameObject:
   - component: {fileID: 8928885822821693326}
   - component: {fileID: 5274123802509271756}
   - component: {fileID: 1193914752756732991}
+  - component: {fileID: 2689638452758117289}
   m_Layer: 5
   m_Name: Dash distance
   m_TagString: Untagged
@@ -1550,6 +1634,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2689638452758117289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4791604686138271717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8661788ccc10d9fd9d1c9c2019bf2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: dashDistance
 --- !u!1 &5832695598238337749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,7 +1937,7 @@ GameObject:
   - component: {fileID: 6825683250601769955}
   m_Layer: 5
   m_Name: Shop
-  m_TagString: Untagged
+  m_TagString: Shop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1858,8 +1955,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5071958998799822938}
-  - {fileID: 2509411441496476785}
   - {fileID: 3675853661540386651}
+  - {fileID: 2509411441496476785}
   - {fileID: 633719700537572267}
   - {fileID: 1980360647300492729}
   - {fileID: 7340970378302519037}
@@ -2002,7 +2099,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Movement Speed
 
-    +2'
+    +5'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2085,6 +2182,7 @@ GameObject:
   - component: {fileID: 1912200903467778218}
   - component: {fileID: 5967392686532701855}
   - component: {fileID: 8237118567054963905}
+  - component: {fileID: 2038953477076072822}
   m_Layer: 5
   m_Name: Dash cooldown
   m_TagString: Untagged
@@ -2194,3 +2292,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2038953477076072822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7953511404242622058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8661788ccc10d9fd9d1c9c2019bf2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: dashCooldown

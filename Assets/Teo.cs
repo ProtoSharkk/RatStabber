@@ -3,10 +3,14 @@ using UnityEngine;
 public class Teo : MonoBehaviour
 {
 	public float health = 100;
+	public float maxHealth = 100;
 	public float moveSpeed = 10;
 	public float swingRange = 3;
+	public float swingDistance = 10;
 	public float damageStrength = 10;
 	public float attackCooldownSeconds = 2;
+	public float dashDistance = 5;
+	public float dashCooldownSeconds = 5;
 	Rigidbody2D controller;
 	GameState gameState;
 	float lastAttackTime;

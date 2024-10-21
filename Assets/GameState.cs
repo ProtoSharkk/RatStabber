@@ -3,7 +3,7 @@ using UnityEngine;
 public class GameState : MonoBehaviour
 {
 	public string state;
-	public uint wave = 1;
+	public uint wave;
 	public GameObject ratbot;
 	public GameObject shop;
 	void Start() {
@@ -14,18 +14,16 @@ public class GameState : MonoBehaviour
     void Update()
     {
         if (GameObject.FindGameObjectsWithTag("Ratbot").Length == 0 && state == "WAVE") {
-			NewWave();
+			OpenShop();
 		}
     }
 	void OpenShop() {
 		state = "SHOP";
 		Instantiate(shop);
 	}
-	void CloseShop() {
-		Destroy(GameObject.FindGameObjectWithTag("Shop"));
-		NewWave();		
-	}
 	public void NewWave() {
+		// Close the shop
+		Destroy(GameObject.FindGameObjectWithTag("Shop"));
 		// Spawn ratbots around the player
 		// Amount, health, and damage scale with waves
 		state = "WAVE";
