@@ -114,6 +114,7 @@ MonoBehaviour:
   dashCooldownSeconds: 5
   lastAttackTime: 0
   lastDashTime: 0
+  distanceIndicator: {fileID: 0}
 --- !u!50 &-4152331571693237436
 Rigidbody2D:
   serializedVersion: 5

@@ -51,9 +51,10 @@ public class Teo : MonoBehaviour
 			transform.position,
 			swingRange,
 			new Vector2(
-				Screen.width/2 - Input.mousePosition.x,
-				Screen.height/2 - Input.mousePosition.y
-			)
+				Input.mousePosition.x - Screen.width/2,
+				Input.mousePosition.y - Screen.height/2
+			).normalized,
+			swingDistance
 		);
 		// Damage all ratbots in scanned area
 		foreach (RaycastHit2D hit in hits) {
