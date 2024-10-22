@@ -9,7 +9,7 @@ public class Teo : MonoBehaviour
 	public float swingDistance = 10;
 	public float damageStrength = 10;
 	public float attackCooldownSeconds = 10;
-	public float dashDistance = 0.5F;
+	public float dashDistance = 5F;
 	public float dashCooldownSeconds = 5;
 	public float lastAttackTime = 0;
 	public float lastDashTime = 0;
@@ -59,12 +59,12 @@ public class Teo : MonoBehaviour
 	}
 	void Dash() {
 		if (Time.fixedTime-lastDashTime < dashCooldownSeconds) return;
-		GetComponent<Rigidbody2D>().simulated = false;
-		controller.linearVelocity = new Vector2(
-			Screen.width/2 - Input.mousePosition.x,
-			Screen.height/2 - Input.mousePosition.y
-		) * dashDistance;
-		new WaitForSeconds (0.5F);
-		GetComponent<Rigidbody2D>().simulated = true;
+		lastDashTime = Time.fixedTime;
+		transform.position += new Vector3(
+			Input.mousePosition.x - Screen.width,
+			Input.mousePosition.y - Screen.height,
+			0
+		).normalized * dashDistance;
+		Debug.Log(controller.linearVelocity);
 	}
 }
