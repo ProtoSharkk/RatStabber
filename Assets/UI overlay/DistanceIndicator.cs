@@ -2,18 +2,17 @@ using UnityEngine;
 
 public class DistanceIndicator : MonoBehaviour
 {
+	Teo player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-		Teo player = GameObject.FindGameObjectWithTag("Player").GetComponent<Teo>();
-		RectTransform rect = GetComponent<RectTransform>();
-        rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, player.swingDistance*2);
-        rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, player.swingDistance*2);
+		player= GameObject.FindGameObjectWithTag("Player").GetComponent<Teo>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+		Debug.Log(player.swingDistance);
+		transform.localScale = new Vector3 (player.swingDistance*0.2F, player.swingDistance*0.2F, 1);
     }
 }

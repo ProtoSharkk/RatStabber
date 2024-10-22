@@ -14,6 +14,7 @@ public class Teo : MonoBehaviour
 	public float dashCooldownSeconds = 5;
 	public float lastAttackTime = 0;
 	public float lastDashTime = 0;
+	public GameObject distanceIndicator;
 	Rigidbody2D controller;
 	GameState gameState;
 	bool dashing;
