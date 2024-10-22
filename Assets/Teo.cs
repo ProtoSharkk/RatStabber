@@ -46,6 +46,7 @@ public class Teo : MonoBehaviour
 		if (Time.fixedTime-lastAttackTime < attackCooldownSeconds) {
 			return;
 		}
+		Instantiate(distanceIndicator, transform);
 		// Get all objects in range in the direction of cursor
 		RaycastHit2D[] hits = Physics2D.CircleCastAll(
 			transform.position,
