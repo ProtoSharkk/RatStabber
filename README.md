@@ -82,3 +82,6 @@ After successfully defeating the Paul bots, the rat improved upon the design to 
 
 ## A sick idea:
 ### After every ten rounds, there will be a portal that brings the player to a challenge stage, where the enemies are very difficult (could be like 20 rounds harder variants) and upon completion the player gets a super power or sometning very rewarding (and more lore unlocks)
+
+##another sick idea:
+## we add hot sexy bots that can pleasure us in exchange for a currency 
