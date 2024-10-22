@@ -16,7 +16,7 @@ public class Teo : MonoBehaviour
 	public float lastDashTime = 0;
 	Rigidbody2D controller;
 	GameState gameState;
-	Vector2 dashVelocity;
+	bool dashing;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
 		controller = GetComponent<Rigidbody2D>();
@@ -26,10 +26,12 @@ public class Teo : MonoBehaviour
     // Update is called once per frame
     void Update() {
 		// Move player
-		controller.AddRelativeForce (new Vector2 (
-			Input.GetAxis("Horizontal"),
-			Input.GetAxis("Vertical")
-		).normalized * moveSpeed);
+		if (!dashing) {
+			controller.AddRelativeForce (new Vector2 (
+				Input.GetAxis("Horizontal"),
+				Input.GetAxis("Vertical")
+			).normalized * moveSpeed);
+		}
 		// Attack on click if not on cooldown
 		if (Input.GetMouseButtonDown(0)) {
 			Attack();
@@ -62,6 +64,7 @@ public class Teo : MonoBehaviour
 	IEnumerator Dash() {
 		BoxCollider2D collider = GetComponent<BoxCollider2D>();
 		lastDashTime = Time.fixedTime;
+		dashing = true;
 		collider.enabled = false;
 		controller.linearDamping = 0;
 		controller.AddRelativeForce (new Vector2(
@@ -69,7 +72,8 @@ public class Teo : MonoBehaviour
 			Input.mousePosition.y - Screen.height/2
 		).normalized * dashDistance);
 		yield return new WaitForSeconds(0.5F);
-		controller.linearDamping = 15;
+		dashing = false;
 		collider.enabled = true;
+		controller.linearDamping = 15;
 	}
 }
