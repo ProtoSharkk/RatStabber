@@ -110,7 +110,7 @@ MonoBehaviour:
   swingDistance: 10
   damageStrength: 10
   attackCooldownSeconds: 2
-  dashDistance: 5
+  dashDistance: 20
   dashCooldownSeconds: 5
   lastAttackTime: 0
   lastDashTime: 0

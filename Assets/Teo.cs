@@ -67,11 +67,12 @@ public class Teo : MonoBehaviour
 		dashing = true;
 		collider.enabled = false;
 		controller.linearDamping = 0;
+		controller.linearVelocity = Vector2.zero;
 		controller.AddRelativeForce (new Vector2(
 			Input.mousePosition.x - Screen.width/2,
 			Input.mousePosition.y - Screen.height/2
 		).normalized * dashDistance);
-		yield return new WaitForSeconds(0.5F);
+		yield return new WaitForSeconds(0.2F);
 		dashing = false;
 		collider.enabled = true;
 		controller.linearDamping = 15;
