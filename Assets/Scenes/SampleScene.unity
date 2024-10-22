@@ -167,10 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -327,6 +327,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1873397571}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3739677681433878215, guid: e05928a0d673caf999d31b31b994a112, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1246075823}
     - targetCorrespondingSourceObject: {fileID: 8669953498445216587, guid: e05928a0d673caf999d31b31b994a112, type: 3}
       insertIndex: 1
       addedObject: {fileID: 977303808}
@@ -447,7 +450,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000377f5862
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -705,11 +708,32 @@ Skybox:
   m_GameObject: {fileID: 977303806}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+--- !u!1 &1024677462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3739677681433878215, guid: e05928a0d673caf999d31b31b994a112, type: 3}
+  m_PrefabInstance: {fileID: 309882168}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1246075822 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4154134366646162009, guid: e05928a0d673caf999d31b31b994a112, type: 3}
   m_PrefabInstance: {fileID: 309882168}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1246075823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024677462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e58a9223e11a452ebfa72dded313f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilePrefab: {fileID: 9207511122995714926, guid: 18ae43c6ae22143f8b06cd29cdfab4c5, type: 3}
+  player: {fileID: 1246075822}
+  tileSize: 10
+  renderDistance: 2
 --- !u!1 &1394869898
 GameObject:
   m_ObjectHideFlags: 0
