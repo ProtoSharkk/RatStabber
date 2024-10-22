@@ -15,6 +15,7 @@ public class Teo : MonoBehaviour
 	public float lastDashTime = 0;
 	Rigidbody2D controller;
 	GameState gameState;
+	Vector2 dashVelocity;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
 		controller = GetComponent<Rigidbody2D>();
@@ -27,7 +28,7 @@ public class Teo : MonoBehaviour
 		controller.linearVelocity = new Vector2 (
 			Input.GetAxis("Horizontal"),
 			Input.GetAxis("Vertical")
-		).normalized * moveSpeed;
+		).normalized * moveSpeed + dashVelocity;
 		// Attack on click if not on cooldown
 		if (Input.GetMouseButtonDown(0)) {
 			Attack();
@@ -65,6 +66,5 @@ public class Teo : MonoBehaviour
 			Input.mousePosition.y - Screen.height/2,
 			0
 		).normalized * dashDistance;
-		Debug.Log(controller.linearVelocity);
 	}
 }
