@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DistanceIndicator : MonoBehaviour
 {
+	public float multiplier;
 	Teo player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,6 +14,6 @@ public class DistanceIndicator : MonoBehaviour
     void Update()
     {
 		Debug.Log(player.swingDistance);
-		transform.localScale = new Vector3 (player.swingDistance*0.2F, player.swingDistance*0.2F, 1);
+		transform.localScale = new Vector3 (player.swingDistance*multiplier, player.swingDistance*multiplier, 1);
     }
 }

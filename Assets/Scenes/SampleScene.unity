@@ -320,6 +320,10 @@ PrefabInstance:
       value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
+      propertyPath: swingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
       propertyPath: distanceIndicator
       value: 
       objectReference: {fileID: 6743253301251978515, guid: c4d4b8228002b32e89ba2545d2ace771, type: 3}
@@ -1131,6 +1135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23dc3f32eba4c9e5aad24589fdbfa30c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  multiplier: 2.8
 --- !u!212 &1891545564
 SpriteRenderer:
   m_ObjectHideFlags: 0
