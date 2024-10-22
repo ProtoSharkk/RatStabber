@@ -2,41 +2,49 @@ using UnityEngine;
 
 public class ShopButton : MonoBehaviour
 {
-	public string upgrade;
+	public UpgradeOption upgrade;
+	public float amount;
+	public enum UpgradeOption {
+		AttackRange,
+		AttackDistance,
+		AttackDamage,
+		AttackCooldown,
+		MaxHealth,
+		MovementSpeed,
+		DashDistance,
+		DashCooldown
+	}
 	void Start() {
 		GetComponent<UnityEngine.UI.Button>().onClick.AddListener(Upgrade);
 	}
 	void Upgrade() {
 		Teo player = GameObject.FindGameObjectWithTag("Player").GetComponent<Teo>();
-		GameState gameState = 
-			GameObject
-			.FindGameObjectWithTag("GameController")
-			.GetComponent<GameState>();
-		if (upgrade == "attackRange") {
-			player.swingRange += 1;
+		switch (upgrade) {
+			case UpgradeOption.AttackRange:
+				player.swingRange += amount;
+				break;
+			case UpgradeOption.AttackDistance:
+				player.swingDistance += amount;
+				break;
+			case UpgradeOption.AttackDamage:
+				player.damageStrength += amount;
+				break;
+			case UpgradeOption.AttackCooldown:
+				player.attackCooldownSeconds += amount;
+				break;
+			case UpgradeOption.MaxHealth:
+				player.health += amount;
+				player.maxHealth += amount;
+				break;
+			case UpgradeOption.MovementSpeed:
+				player.moveSpeed += amount;
+				break;
+			case UpgradeOption.DashDistance:
+				player.dashDistance += amount;
+				break;
+			case UpgradeOption.DashCooldown:
+				player.dashCooldownSeconds += amount;
+				break;
 		}
-		else if (upgrade == "attackDistance") {
-			player.swingDistance += 0.5F;
-		}
-		else if (upgrade == "attackDamage") {
-			player.damageStrength += 5;
-		}
-		else if (upgrade == "attackCooldown") {
-			player.attackCooldownSeconds -= 0.5F;
-		}
-		else if (upgrade == "maxHealth") {
-			player.health += 20;
-			player.maxHealth += 20;
-		}
-		else 	if (upgrade == "movementSpeed") {
-			player.moveSpeed += 5;
-		}
-		else if (upgrade == "dashDistance") {
-			player.dashDistance += 1;
-		}
-		else if (upgrade == "dashCooldown") {
-			player.dashCooldownSeconds -= 0.5F;
-		}
-		gameState.NewWave();
 	}
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameState : MonoBehaviour
 {
-	public string state;
+	public State state;
 	public uint wave;
 	public GameObject ratbot;
 	public GameObject shop;
@@ -10,15 +10,22 @@ public class GameState : MonoBehaviour
 		OpenShop();
 	}
 
+	public enum State {
+		Wave,
+		Shop,
+		Menu,
+		Paused,
+	}
+
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindGameObjectsWithTag("Ratbot").Length == 0 && state == "WAVE") {
+        if (GameObject.FindGameObjectsWithTag("Ratbot").Length == 0 && state == State.Wave) {
 			OpenShop();
 		}
     }
 	void OpenShop() {
-		state = "SHOP";
+		state = State.Shop;
 		Instantiate(shop);
 	}
 	public void NewWave() {
@@ -26,7 +33,7 @@ public class GameState : MonoBehaviour
 		Destroy(GameObject.FindGameObjectWithTag("Shop"));
 		// Spawn ratbots around the player
 		// Amount, health, and damage scale with waves
-		state = "WAVE";
+		state = State.Wave;
 		Vector3 playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
 		for (uint _ = 0; _ <= wave; _++) {
 			GameObject newRatbot = Instantiate(
