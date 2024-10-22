@@ -61,8 +61,8 @@ public class Teo : MonoBehaviour
 		if (Time.fixedTime-lastDashTime < dashCooldownSeconds) return;
 		lastDashTime = Time.fixedTime;
 		transform.position += new Vector3(
-			Input.mousePosition.x - Screen.width,
-			Input.mousePosition.y - Screen.height,
+			Input.mousePosition.x - Screen.width/2,
+			Input.mousePosition.y - Screen.height/2,
 			0
 		).normalized * dashDistance;
 		Debug.Log(controller.linearVelocity);

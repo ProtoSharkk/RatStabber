@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      whiteteotiles_0: 7415648711516331556
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
