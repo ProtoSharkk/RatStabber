@@ -9,9 +9,10 @@ public class Teo : MonoBehaviour
 	public float swingDistance = 10;
 	public float damageStrength = 10;
 	public float attackCooldownSeconds = 10;
-	public float dashDistance = 5;
+	public float dashDistance = 5F;
 	public float dashCooldownSeconds = 5;
 	public float lastAttackTime = 0;
+	public float lastDashTime = 0;
 	Rigidbody2D controller;
 	GameState gameState;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -31,6 +32,9 @@ public class Teo : MonoBehaviour
 		if (Input.GetMouseButtonDown(0)) {
 			Attack();
 			lastAttackTime = Time.fixedTime;
+		}
+		if (Input.GetMouseButtonDown(1)) {
+			StartCoroutine("Dash");
 		}
 	}
 	void Attack() {
@@ -52,5 +56,15 @@ public class Teo : MonoBehaviour
 			if (ratbot == null) continue;
 			ratbot.Damage(damageStrength);
 		}
+	}
+	void Dash() {
+		if (Time.fixedTime-lastDashTime < dashCooldownSeconds) return;
+		lastDashTime = Time.fixedTime;
+		transform.position += new Vector3(
+			Input.mousePosition.x - Screen.width,
+			Input.mousePosition.y - Screen.height,
+			0
+		).normalized * dashDistance;
+		Debug.Log(controller.linearVelocity);
 	}
 }
