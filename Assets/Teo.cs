@@ -14,6 +14,7 @@ public class Teo : MonoBehaviour
 	public float dashCooldownSeconds = 5;
 	public float lastAttackTime = 0;
 	public float lastDashTime = 0;
+	public GameObject distanceIndicator;
 	Rigidbody2D controller;
 	GameState gameState;
 	bool dashing;
@@ -45,14 +46,16 @@ public class Teo : MonoBehaviour
 		if (Time.fixedTime-lastAttackTime < attackCooldownSeconds) {
 			return;
 		}
+		Instantiate(distanceIndicator, transform);
 		// Get all objects in range in the direction of cursor
 		RaycastHit2D[] hits = Physics2D.CircleCastAll(
 			transform.position,
 			swingRange,
 			new Vector2(
-				Screen.width/2 - Input.mousePosition.x,
-				Screen.height/2 - Input.mousePosition.y
-			)
+				Input.mousePosition.x - Screen.width/2,
+				Input.mousePosition.y - Screen.height/2
+			).normalized,
+			swingDistance
 		);
 		// Damage all ratbots in scanned area
 		foreach (RaycastHit2D hit in hits) {

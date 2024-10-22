@@ -320,6 +320,14 @@ PrefabInstance:
       value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
+      propertyPath: swingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
+      propertyPath: distanceIndicator
+      value: 
+      objectReference: {fileID: 1199330263328928228, guid: ca2da40bbabe0b0e9b9a1265c11abe06, type: 3}
+    - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
       propertyPath: attackCooldownSeconds
       value: 3
       objectReference: {fileID: 0}

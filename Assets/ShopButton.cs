@@ -16,7 +16,7 @@ public class ShopButton : MonoBehaviour
 			player.swingRange += 1;
 		}
 		else if (upgrade == "attackDistance") {
-			player.swingDistance += 30;
+			player.swingDistance += 0.5F;
 		}
 		else if (upgrade == "attackDamage") {
 			player.damageStrength += 5;
