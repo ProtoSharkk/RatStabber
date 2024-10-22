@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Teo : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class Teo : MonoBehaviour
 			Attack();
 			lastAttackTime = Time.fixedTime;
 		}
-		if (Input.GetMouseButtonDown(1)) {
+		if (Input.GetMouseButtonDown(1) && Time.fixedTime-lastDashTime > dashCooldownSeconds) {
 			StartCoroutine("Dash");
 		}
 	}
@@ -58,8 +59,7 @@ public class Teo : MonoBehaviour
 			ratbot.Damage(damageStrength);
 		}
 	}
-	void Dash() {
-		if (Time.fixedTime-lastDashTime < dashCooldownSeconds) return;
+	IEnumerator Dash() {
 		BoxCollider2D collider = GetComponent<BoxCollider2D>();
 		lastDashTime = Time.fixedTime;
 		collider.enabled = false;
@@ -68,9 +68,7 @@ public class Teo : MonoBehaviour
 			Input.mousePosition.x - Screen.width/2,
 			Input.mousePosition.y - Screen.height/2
 		).normalized * dashDistance);
-		Debug.Log("before");
-		new WaitForSeconds(2F);
-		Debug.Log("after");
+		yield return new WaitForSeconds(0.5F);
 		controller.linearDamping = 15;
 		collider.enabled = true;
 	}
