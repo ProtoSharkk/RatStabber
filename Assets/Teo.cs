@@ -25,10 +25,10 @@ public class Teo : MonoBehaviour
     // Update is called once per frame
     void Update() {
 		// Move player
-		controller.linearVelocity = new Vector2 (
+		controller.AddRelativeForce (new Vector2 (
 			Input.GetAxis("Horizontal"),
 			Input.GetAxis("Vertical")
-		).normalized * moveSpeed + dashVelocity;
+		).normalized * moveSpeed);
 		// Attack on click if not on cooldown
 		if (Input.GetMouseButtonDown(0)) {
 			Attack();
@@ -60,11 +60,18 @@ public class Teo : MonoBehaviour
 	}
 	void Dash() {
 		if (Time.fixedTime-lastDashTime < dashCooldownSeconds) return;
+		BoxCollider2D collider = GetComponent<BoxCollider2D>();
 		lastDashTime = Time.fixedTime;
-		transform.position += new Vector3(
+		collider.enabled = false;
+		controller.linearDamping = 0;
+		controller.AddRelativeForce (new Vector2(
 			Input.mousePosition.x - Screen.width/2,
-			Input.mousePosition.y - Screen.height/2,
-			0
-		).normalized * dashDistance;
+			Input.mousePosition.y - Screen.height/2
+		).normalized * dashDistance);
+		Debug.Log("before");
+		new WaitForSeconds(2F);
+		Debug.Log("after");
+		controller.linearDamping = 15;
+		collider.enabled = true;
 	}
 }

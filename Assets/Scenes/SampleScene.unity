@@ -241,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4152331571693237436, guid: e05928a0d673caf999d31b31b994a112, type: 3}
       propertyPath: m_LinearDamping
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -4152331571693237436, guid: e05928a0d673caf999d31b31b994a112, type: 3}
       propertyPath: m_CollisionDetection
@@ -314,6 +314,10 @@ PrefabInstance:
     - target: {fileID: 4662991606640308287, guid: e05928a0d673caf999d31b31b994a112, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
+      propertyPath: dashDistance
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
       propertyPath: attackCooldownSeconds
