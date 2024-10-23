@@ -46,5 +46,6 @@ public class ShopButton : MonoBehaviour
 				player.dashCooldownSeconds += amount;
 				break;
 		}
+		GameObject.FindGameObjectWithTag("GameController").GetComponent<GameState>().NewWave();
 	}
 }
