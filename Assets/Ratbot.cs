@@ -20,7 +20,7 @@ public class Ratbot : MonoBehaviour
 		// Constantly move towards player
 		Rigidbody2D controller = GetComponent<Rigidbody2D>();
 		Vector2 direction = (player.transform.position - transform.position).normalized;
-		controller.linearVelocity = direction*moveSpeed;
+		controller.linearVelocity = direction*moveSpeed*Time.deltaTime;
     }
 
 	void OnCollisionStay2D(Collision2D collision) {

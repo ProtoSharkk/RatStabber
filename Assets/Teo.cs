@@ -29,9 +29,9 @@ public class Teo : MonoBehaviour
 		// Move player
 		if (!dashing) {
 			controller.AddRelativeForce (new Vector2 (
-				Input.GetAxis("Horizontal"),
-				Input.GetAxis("Vertical")
-			).normalized * moveSpeed);
+				Input.GetAxisRaw("Horizontal"),
+				Input.GetAxisRaw("Vertical")
+			).normalized * moveSpeed * Time.deltaTime);
 		}
 		// Attack on click if not on cooldown
 		if (Input.GetMouseButtonDown(0)) {
