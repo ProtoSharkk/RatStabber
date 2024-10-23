@@ -16,7 +16,7 @@ public class DistanceIndicator : MonoBehaviour
     }
 
 	void Update() {
-		sprite.color = new Color (1F, 1F, 1F, 0.5F-(Time.fixedTime-timeCreated));
+		sprite.color = new Color (0F, 0F, 0F, 0.5F-(Time.fixedTime-timeCreated));
 	}
 
 	IEnumerator KillMyself() {

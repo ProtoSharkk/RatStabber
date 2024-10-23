@@ -14,6 +14,6 @@ public class AttackCooldown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Mathf.Min(100*(Time.fixedTime-player.lastAttackTime)/player.attackCooldownSeconds, 100));
+		GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Mathf.Max(0, 100-100*(Time.fixedTime-player.lastAttackTime)/player.attackCooldownSeconds));
     }
 }
