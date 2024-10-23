@@ -317,7 +317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
       propertyPath: moveSpeed
-      value: 3000
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
       propertyPath: dashDistance

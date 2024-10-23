@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d75aac518cf9dca0b16bb5a2e347204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 200
+  moveSpeed: 1500
   damageStrength: 10
   damageTimeoutSeconds: 0.5
   health: 10
@@ -164,8 +164,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
+  m_Mass: 0.5
+  m_LinearDamping: 10
   m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
