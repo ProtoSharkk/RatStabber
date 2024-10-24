@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b565bfdb85a3b444796e15075243e9db
+guid: 1ed2940600d777449af5ac2f03795db2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7415648711516331556
-    second: whiteteotiles_0
+      213: -6239475547466147608
+    second: asphalt_road_2_0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,20 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 32
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -113,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: whiteteotiles_0
+      name: asphalt_road_2_0_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 626
-        height: 412
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 42e930d963da9e660800000000000000
-      internalID: 7415648711516331556
+      spriteID: 8e85b883c0ee869a0800000000000000
+      internalID: -6239475547466147608
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      whiteteotiles_0: 7415648711516331556
+      asphalt_road_2_0_0: -6239475547466147608
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
