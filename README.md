@@ -1,20 +1,20 @@
 # RatStabber
 
-### Alright here's the vision
+### Alright, Here's the Basic Vision:
 
-- Player moves around, camera follows player
+- The Player (Teo) moves around an infinite field with the camera following the player
 - Enemies are rat bots
-    - All have melee attacks
-    - Some can throw guns
-    - Some can actually fire guns (they are slower)
-    - Fast fuckers
+    - All deal damage upon contact
+    - Some can throw guns (movement slower)
+    - Some can fire the guns (they are even slower)
+    - Fast fuckers (less damage)
     - Minecraft creeper rats (explode)
-    - 
+      
 - You are defending the real rat
-    - The rat is the one that canonically gives you a powerup at the end of each wave.
+    - The rat is the one that canonically gives you a power-up at the end of each wave.
 - You attack with a sword
     - Damage scales with speed
-    - 
+      
 - Faithful to the original game, you get a new powerup every wave
     - More health
     - More base damage
@@ -46,7 +46,17 @@
 - [x] When enemy touches player - remove health (scaled with x amount of rounds)
 - [ ] When object summoned / thrown by enemy, remove health (smaller scaling)
 
-
+### Types of Enemies:
+- [x] Default Ratbot
+- [ ] Fast Ratbot
+    - [ ] These things are your nightmare
+    - [ ] Deal minimal damage but chip health FAST 
+- [ ] Shooting/Throwing Ratbot
+    - [ ] Slower than your average rat
+    - [ ] Throwables deal less damage 
+- [ ] Big Tanky Ratbot
+    - [ ] 3-5x amount of health of a normal rat? 
+- [ ]  Secret Paulbot :)
 
 ### In-Game UI:
 - [x] Player health on bottom left
@@ -61,6 +71,8 @@
     - [x] Speed
     - [ ] Dash cooldown
     - [ ] Dash distance
+     
+- [ ] (Only an idea for now) Have a status bar at the bottom right to show your current stats 
 
 
 ### UI / AUDIO:
@@ -74,14 +86,18 @@
       
 
 ## LORE:
-After successfully defeating the Paul bots, the rat improved upon the design to create the rat bots. He could finally get revenge on Paul for the destruction of his kind. However, the Paul Bots mangaged to regain consciousness inside of the new and improved Rat Bots, in-turn making the ratbots turn against the rat, taking his weapons and his last hopes of defeating Paul as well. You (Teo) have arrived to protect the rat and help him figure out a way to stop the now evil rat bots and put and end to this war once and for all.
+After successfully defeating the Paul bots, the rat improved upon the design to create the rat bots. He could finally get revenge on Paul for the destruction of his kind. However, the Paul Bots managed to regain consciousness inside of the new and improved Rat Bots, in-turn making the Ratbots turn against the rat, taking his weapons and his last hopes of defeating Paul as well. You (Teo) have arrived to protect the rat and help him figure out a way to stop the now evil rat bots and put an end to this war once and for all.
+
+
 
 
 
 
 
 ## A sick idea:
-### After every ten rounds, there will be a portal that brings the player to a challenge stage, where the enemies are very difficult (could be like 20 rounds harder variants) and upon completion the player gets a super power or sometning very rewarding (and more lore unlocks)
+### After every ten rounds, there will be an OPTIONAL portal that brings the player to a challenging stage (could just trigger a toggle that allows for the hard stage to make things easier since it's an infinite field), where the enemies are very difficult (could be like 20 rounds harder variants) and upon completion, the player gets a super-power or something very rewarding (and more lore unlocks)
 
-##another sick idea:
-## we add hot sexy bots that can pleasure us in exchange for a currency 
+
+
+## Sorry Teo
+I do no think we are going to be able to add your hot sexy bots...
