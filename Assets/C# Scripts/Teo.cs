@@ -58,11 +58,11 @@ public class Teo : MonoBehaviour
 			// If ratbot exists and is within swing range, damage it.
 			// Calculate absolute difference between angles of ratbot and cursor
 			if (ratbot == null || Mathf.Abs(Mathf.Atan2(
-					ratbot.transform.position.y - transform.position.y,
-					ratbot.transform.position.x - transform.position.x
+					hit.transform.position.y - transform.position.y,
+					hit.transform.position.x - transform.position.x
 				) - Mathf.Atan2(
-					Screen.height/2 - Input.mousePosition.y,
-					Screen.width/2 - Input.mousePosition.x
+					Input.mousePosition.y - Screen.height/2,
+					Input.mousePosition.x - Screen.width/2
 				)) > swingRangeDeg * Mathf.Deg2Rad
 			) continue;
 			ratbot.Damage(damageStrength);
