@@ -21,7 +21,7 @@ public class ShopButton : MonoBehaviour
 		Teo player = GameObject.FindGameObjectWithTag("Player").GetComponent<Teo>();
 		switch (upgrade) {
 			case UpgradeOption.AttackRange:
-				player.swingRange += amount;
+				player.swingRangeDeg += amount;
 				break;
 			case UpgradeOption.AttackDistance:
 				player.swingDistance += amount;
