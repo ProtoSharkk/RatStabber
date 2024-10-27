@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 
-public class TypewriterEffect : MonoBehaviour
+public class TypewriterEffectCh1 : MonoBehaviour
 {
     public TextMeshProUGUI textComponent; // Reference to the TextMeshProUGUI component
     public float typingSpeed = 0.05f;     // Speed of the typing effect
@@ -13,7 +13,7 @@ public class TypewriterEffect : MonoBehaviour
     private void Start()
     {
         // Example of starting the effect
-        SetText("One day, a genius boy named Paul changed the world. He used his computer science knowledge to create the PaulBots. An army of evil AI bots that followed his every order. Under his control, Paul set his army against the rats, who stood little to no chance... \n\nOne day, a brave and courageous rat set off to fight the PaulBot army in hopes of avenging his kind. He fought ruthlessly day and night, and would not stop until the mastermind was finished once and for all...");
+        SetText("The Rat fought hard for his kind, rallying up the support of the remaining alive rats. One by one, the PaulBot army was slowly dwindling... The Rat investigated some of the defeated PaulBots and managed to hack into them, converting them into ratbots that aided him in his battles. These upgraded, fresh and shiny ratbots took out the PaulBots with ease. The ratbots came out victorious, defeating the paulbot army... for now...");
     }
 
     public void SetText(string text)
