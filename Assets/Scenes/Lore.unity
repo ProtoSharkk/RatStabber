@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 26234209}
   - component: {fileID: 26234208}
   - component: {fileID: 26234207}
+  - component: {fileID: 26234210}
   m_Layer: 5
   m_Name: Lore 7
   m_TagString: Untagged
@@ -252,6 +253,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26234205}
   m_CullTransparentMesh: 1
+--- !u!114 &26234210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26234205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.7764706}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &131966541
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +298,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 80bc57c0a333b8144b7d78c08af5e6a6, type: 3}
   m_Resource: {fileID: 8300000, guid: 80bc57c0a333b8144b7d78c08af5e6a6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 0.08
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -596,6 +612,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &494510358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 494510360}
+  - component: {fileID: 494510359}
+  m_Layer: 0
+  m_Name: ToCh1Script
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &494510359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494510358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f467de421dd2674fb694a425767e601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &494510360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494510358}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1076.0741, y: 658.4375, z: 5.6689296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &567457453
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,6 +804,7 @@ GameObject:
   - component: {fileID: 573024782}
   - component: {fileID: 573024781}
   - component: {fileID: 573024780}
+  - component: {fileID: 573024783}
   m_Layer: 5
   m_Name: Lore 4
   m_TagString: Untagged
@@ -865,6 +926,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573024778}
   m_CullTransparentMesh: 1
+--- !u!114 &573024783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573024778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.7764706}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &574118848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,6 +1089,7 @@ GameObject:
   - component: {fileID: 601751853}
   - component: {fileID: 601751852}
   - component: {fileID: 601751851}
+  - component: {fileID: 601751854}
   m_Layer: 5
   m_Name: Lore 8
   m_TagString: Untagged
@@ -1134,6 +1211,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601751849}
   m_CullTransparentMesh: 1
+--- !u!114 &601751854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601751849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.7764706}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &629065841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1330,8 @@ GameObject:
   - component: {fileID: 888579422}
   - component: {fileID: 888579421}
   - component: {fileID: 888579420}
+  - component: {fileID: 888579423}
+  - component: {fileID: 888579424}
   m_Layer: 5
   m_Name: Lore 1
   m_TagString: Untagged
@@ -1309,9 +1403,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadSampleScene
+      - m_Target: {fileID: 494510359}
+        m_TargetAssemblyTypeName: ToCh1, Assembly-CSharp
+        m_MethodName: LoadCh1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1359,6 +1453,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888579418}
   m_CullTransparentMesh: 1
+--- !u!114 &888579423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888579418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f467de421dd2674fb694a425767e601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &888579424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888579418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.7764706}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &903962965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,6 +1659,7 @@ GameObject:
   - component: {fileID: 1037091451}
   - component: {fileID: 1037091450}
   - component: {fileID: 1037091449}
+  - component: {fileID: 1037091452}
   m_Layer: 5
   m_Name: Lore 2
   m_TagString: Untagged
@@ -1659,6 +1781,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037091447}
   m_CullTransparentMesh: 1
+--- !u!114 &1037091452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037091447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.7764706}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1080276387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,6 +1809,7 @@ GameObject:
   - component: {fileID: 1080276390}
   - component: {fileID: 1080276389}
   - component: {fileID: 1080276392}
+  - component: {fileID: 1080276393}
   m_Layer: 5
   m_Name: Prequel
   m_TagString: Untagged
@@ -1805,6 +1943,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff1f2f93b63d8e24888eb24852352e58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1080276393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080276387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.7764706}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1114395083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,6 +2150,7 @@ GameObject:
   - component: {fileID: 1426497668}
   - component: {fileID: 1426497667}
   - component: {fileID: 1426497666}
+  - component: {fileID: 1426497669}
   m_Layer: 5
   m_Name: Lore 5
   m_TagString: Untagged
@@ -2118,6 +2272,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426497664}
   m_CullTransparentMesh: 1
+--- !u!114 &1426497669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426497664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.7764706}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1459611047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,6 +2873,7 @@ GameObject:
   - component: {fileID: 1799225971}
   - component: {fileID: 1799225970}
   - component: {fileID: 1799225969}
+  - component: {fileID: 1799225972}
   m_Layer: 5
   m_Name: Lore 3
   m_TagString: Untagged
@@ -2825,6 +2995,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799225967}
   m_CullTransparentMesh: 1
+--- !u!114 &1799225972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799225967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.7764706}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1918250231
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,6 +3022,7 @@ GameObject:
   - component: {fileID: 1918250235}
   - component: {fileID: 1918250234}
   - component: {fileID: 1918250233}
+  - component: {fileID: 1918250236}
   m_Layer: 5
   m_Name: Lore 6
   m_TagString: Untagged
@@ -2958,6 +3144,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918250231}
   m_CullTransparentMesh: 1
+--- !u!114 &1918250236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918250231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.7764706}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1924750674
 GameObject:
   m_ObjectHideFlags: 0
@@ -3121,7 +3322,7 @@ RectTransform:
   m_GameObject: {fileID: 1929793936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10.623456, y: 10.623456, z: 10.623456}
+  m_LocalScale: {x: 11.2, y: 11.2, z: 11.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1763061659}
@@ -3452,3 +3653,4 @@ SceneRoots:
   - {fileID: 1610167837}
   - {fileID: 131966543}
   - {fileID: 1119006578}
+  - {fileID: 494510360}

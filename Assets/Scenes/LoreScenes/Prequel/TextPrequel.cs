@@ -13,7 +13,7 @@ public class TypewriterEffect : MonoBehaviour
     private void Start()
     {
         // Example of starting the effect
-        SetText("One day, a genius boy named Paul changed the world. He used his computer science knowledge to create the PaulBots. An army of evil AI bots that followed his every order. Under his control, Paul set his army against the rats, who stood little to no chance... \nOne day, a brave and courageous rat set off to fight the PaulBot army in hopes of avenging his kind. He fought ruthlessly day and night, and would not stop until the mastermind was finished once and for all...");
+        SetText("One day, a genius boy named Paul changed the world. He used his computer science knowledge to create the PaulBots. An army of evil AI bots that followed his every order. Under his control, Paul set his army against the rats, who stood little to no chance... \n\nOne day, a brave and courageous rat set off to fight the PaulBot army in hopes of avenging his kind. He fought ruthlessly day and night, and would not stop until the mastermind was finished once and for all...");
     }
 
     public void SetText(string text)
