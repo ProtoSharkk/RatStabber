@@ -10,6 +10,7 @@ public class Teo : MonoBehaviour
 	public float swingDistance = 10;
 	public float damageStrength = 10;
 	public float attackCooldownSeconds = 10;
+	public float spamPunishMultiplier = 0.5F;
 	public float dashDistance = 5F;
 	public float dashCooldownSeconds = 5;
 	public float lastAttackTime = 0;
@@ -69,9 +70,12 @@ public class Teo : MonoBehaviour
 			) continue;
 			// Apply a multiplier to damageStrength based on attack cooldown.
 			// If multiplier > 1, just do damageStrength
-			// Fuck readability, it's a one liner now
-			Debug.Log(Mathf.Min(damageStrength * (Time.fixedTime - lastAttackTime)/attackCooldownSeconds, damageStrength));
-			ratbot.Damage(Mathf.Min(damageStrength * (Time.fixedTime - lastAttackTime)/attackCooldownSeconds, damageStrength));
+			float damageAmount = damageStrength * (Time.fixedTime - lastAttackTime)/attackCooldownSeconds;
+			ratbot.Damage(
+				(damageAmount > damageStrength)
+				? damageStrength
+				: damageAmount * spamPunishMultiplier
+			);
 		}
 	}
 	IEnumerator Dash() {
