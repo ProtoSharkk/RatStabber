@@ -21,25 +21,25 @@ EditorBuildSettings:
     path: Assets/Scenes/LoreScenes/Chapter 1/Chapter1.unity
     guid: 580d469f6df80de45abc534557732f9f
   - enabled: 1
-    path: Assets/Scenes/LoreScenes/Chapter 2/Chapter 2.unity
+    path: Assets/Scenes/LoreScenes/Chapter 2/Chapter2.unity
     guid: 91b375b41f7f04641a76992b976a4285
   - enabled: 1
-    path: Assets/Scenes/LoreScenes/Chapter 3/Chapter 3.unity
+    path: Assets/Scenes/LoreScenes/Chapter 3/Chapter3.unity
     guid: a64ebc35f77b7c04da00bb8467ee5eb0
   - enabled: 1
-    path: Assets/Scenes/LoreScenes/Chapter 4/Chapter 4.unity
+    path: Assets/Scenes/LoreScenes/Chapter 4/Chapter4.unity
     guid: 2c53b3e3922eacb48a48737551e0d77d
   - enabled: 1
-    path: Assets/Scenes/LoreScenes/Chapter 5/Chapter 5.unity
+    path: Assets/Scenes/LoreScenes/Chapter 5/Chapter5.unity
     guid: d54c774766d6a854c9295003d3382df1
   - enabled: 1
-    path: Assets/Scenes/LoreScenes/Chapter 6/Chapter 6.unity
+    path: Assets/Scenes/LoreScenes/Chapter 6/Chapter6.unity
     guid: 73d5a0e5a25819b47a4d9d304f0c85b5
   - enabled: 1
-    path: Assets/Scenes/LoreScenes/Chapter 7/Chapter 7.unity
+    path: Assets/Scenes/LoreScenes/Chapter 7/Chapter7.unity
     guid: d2d69ae04b5e07b42a2c61663fd6ad9d
   - enabled: 1
-    path: Assets/Scenes/LoreScenes/Chapter 8/Chapter 8.unity
+    path: Assets/Scenes/LoreScenes/Chapter 8/Chapter8.unity
     guid: 923241cfbec2e844c92936db89fac8a1
   - enabled: 1
     path: Assets/Scenes/LoreScenes/Secret Chapter/Secret Chapter.unity
