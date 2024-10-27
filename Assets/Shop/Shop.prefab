@@ -1046,7 +1046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgrade: 0
-  amount: 1
+  amount: 1.5
 --- !u!1 &3627401992951871319
 GameObject:
   m_ObjectHideFlags: 0
