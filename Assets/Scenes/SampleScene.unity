@@ -325,11 +325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
       propertyPath: swingDistance
-<<<<<<< HEAD
       value: 3
-=======
-      value: 2
->>>>>>> main
+      objectReference: {fileID: 0}
+    - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
+      propertyPath: swingRangeDeg
+      value: 21.98
       objectReference: {fileID: 0}
     - target: {fileID: 6118034672792182209, guid: e05928a0d673caf999d31b31b994a112, type: 3}
       propertyPath: distanceIndicator
