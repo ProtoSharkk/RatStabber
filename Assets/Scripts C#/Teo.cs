@@ -43,9 +43,6 @@ public class Teo : MonoBehaviour
 		}
 	}
 	void Attack() {
-		if (Time.fixedTime-lastAttackTime < attackCooldownSeconds) {
-			return;
-		}
 		Instantiate(distanceIndicator, transform);
 		// Get all objects within swingDistance of player
 		Collider2D[] hits = Physics2D.OverlapCircleAll(
@@ -55,13 +52,13 @@ public class Teo : MonoBehaviour
 		// Damage all ratbots in scanned area
 		foreach (Collider2D hit in hits) {
 			Ratbot ratbot = hit.GetComponent<Ratbot>();
-			// If ratbot exists and is within swing range, damage it.
-			// Calculate absolute difference between angles of ratbot and cursor
 			if (ratbot == null) continue;
+			// Find the closest point on the ratbot
 			Vector2 hitClosest = Physics2D.ClosestPoint(
-				transform.position,
-				hit
+				transform.position, hit
 			);
+			// If ratbot's closest point within swing range, damage it.
+			// Calculate absolute difference between angles of ratbot and cursor
 			if (Mathf.Abs(Mathf.Atan2(
 					hitClosest.y - transform.position.y,
 					hitClosest.x - transform.position.x
@@ -70,22 +67,29 @@ public class Teo : MonoBehaviour
 					Input.mousePosition.x - Screen.width/2
 				)) > swingRangeDeg * Mathf.Deg2Rad
 			) continue;
-			ratbot.Damage(damageStrength);
+			// Apply a multiplier to damageStrength based on attack cooldown.
+			// If multiplier > 1, just do damageStrength
+			// Fuck readability, it's a one liner now
+			Debug.Log(Mathf.Min(damageStrength * (Time.fixedTime - lastAttackTime)/attackCooldownSeconds, damageStrength));
+			ratbot.Damage(Mathf.Min(damageStrength * (Time.fixedTime - lastAttackTime)/attackCooldownSeconds, damageStrength));
 		}
 	}
 	IEnumerator Dash() {
 		BoxCollider2D collider = GetComponent<BoxCollider2D>();
+		// Disable collision and linearDamping while dashing
 		lastDashTime = Time.fixedTime;
 		dashing = true;
 		collider.enabled = false;
 		controller.linearDamping = 0;
 		controller.linearVelocity = Vector2.zero;
+		// Apply a force to player towards mouse cursor
 		controller.AddRelativeForce (new Vector2(
 			Input.mousePosition.x - Screen.width/2,
 			Input.mousePosition.y - Screen.height/2
 		).normalized * dashDistance);
 		// Wait 0.2 seconds before ending the dash
 		yield return new WaitForSeconds(0.2F);
+		// Re enable collision and linearDamping after dash complete
 		dashing = false;
 		collider.enabled = true;
 		controller.linearDamping = 15;
