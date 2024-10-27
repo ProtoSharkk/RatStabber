@@ -33,6 +33,7 @@ public class Ratbot : MonoBehaviour
 
 	// Die if health below zero
 	public void Damage(float hurtyAmount) {
+		Debug.Log(hurtyAmount);
 		health -= hurtyAmount;
 		if (health <= 0) {
 			Destroy(gameObject);
