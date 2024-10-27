@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TeoSword_2_0: -4241835214737505916
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
