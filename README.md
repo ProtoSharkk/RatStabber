@@ -2,7 +2,7 @@
 
 ![TeoSword_clear](https://github.com/user-attachments/assets/5cc699a3-c4a2-47c5-9d7f-10f8546ad48f)
 
-### Fight off the ratbots and save the rat cities as the hunky man Teo himself!
+### Fight off the ratbots and save the rat cities as the hunky man Teo himself! (and all the goofy ai generated images of him and everyone else)
 
 
 ## LORE:
@@ -77,7 +77,7 @@ After successfully defeating the Paulbots, the rat took components of the Paulbo
 - [x] Wave spawns enemies
 - [x] Detect when wave ends
 - [x] Activate new waves after powerup has been chosen by player
-- [ ] Dash ability
+- [x] Dash ability
 
 ### Enemy:
 - [x] All Enemies have simple pathfinding towards the player
@@ -98,17 +98,17 @@ After successfully defeating the Paulbots, the rat took components of the Paulbo
 
 ### In-Game UI:
 - [x] Player health on bottom left
-- [ ] Round / Wave on bottom left (?)
+- [x] Round / Wave on bottom left (?)
 - [ ] Maybe show enemy remaining count? (We can make a hard mode that removes UI except health)
 - [ ] Upon round end, pop-up menu for selecting powerup
     - [x] Damage
-    - [ ] Attack distance
-    - [ ] Attack range
-    - [ ] Attack cooldown
+    - [x] Attack distance
+    - [x] Attack range
+    - [x] Attack cooldown
     - [x] Health
     - [x] Speed
-    - [ ] Dash cooldown
-    - [ ] Dash distance
+    - [x] Dash cooldown
+    - [x] Dash distance
      
 - [ ] (Only an idea for now) Have a status bar at the bottom right to show your current stats 
 
