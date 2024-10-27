@@ -13,7 +13,7 @@ public class TypewriterEffectCh1 : MonoBehaviour
     private void Start()
     {
         // Example of starting the effect
-        SetText("The Rat fought hard for his kind, rallying up the support of the remaining rats. The Rat investigated some of the defeated PaulBots and managed to hack into them,  converting them into ratbots that aided him in his battles. The ratbots came out victorious, defeating the paulbot army... for now...");
+        SetText("The Rat fought hard for his kind, rallying up the support of the remaining alive rats. One by one, the PaulBot army was slowly dwindling... The Rat investigated some of the defeated PaulBots and managed to hack into them, converting them into ratbots that aided him in his battles. These upgraded, fresh and shiny ratbots took out the PaulBots with ease. The ratbots came out victorious, defeating the paulbot army... for now...");
     }
 
     public void SetText(string text)
