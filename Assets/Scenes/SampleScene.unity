@@ -684,6 +684,7 @@ MonoBehaviour:
   shop: {fileID: 6569104281457075541, guid: c0d23b24c9c882ef89013998dab29dea, type: 3}
   ratbot: {fileID: 398740452138961375, guid: 5887eeeb7c78eb5c7bf46c5893fd4846, type: 3}
   gunThrower: {fileID: 398740452138961375, guid: b1e1e6378fb12d47e989565896a737ef, type: 3}
+  fastFucker: {fileID: 7192111562784377269, guid: 2c67a9ffe3cbdc6989fcabe398ffd2dc, type: 3}
 --- !u!4 &745837569
 Transform:
   m_ObjectHideFlags: 0

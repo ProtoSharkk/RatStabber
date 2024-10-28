@@ -7,11 +7,13 @@ public class GameState : MonoBehaviour
 	public GameObject shop;
 	public GameObject ratbot;
 	public GameObject gunThrower;
+	public GameObject fastFucker;
 
-	int[] counts = new int[2];
+	int[] counts = new int[3];
 	enum CountIndex : uint {
 		ratbot = 0,
-		gunThrower = 1
+		gunThrower = 1,
+		fastFucker = 2
 	}
 
 	void Start() {
@@ -52,6 +54,7 @@ public class GameState : MonoBehaviour
 		for (uint _ = 0; _ <= wave; _++) {
 			GameObject newRatbot = Instantiate(
 				SpawnRatbot(),
+				// Spawn ratbots in a circle around the player
 				Random.insideUnitCircle.normalized*20
 				+ new Vector2 (
 					playerPosition.x,
@@ -59,6 +62,8 @@ public class GameState : MonoBehaviour
 				),
 				Quaternion.identity
 			);
+			// Set ratbot damageStrength and health
+			// TODO: set speed
 			newRatbot.GetComponent<Ratbot>().damageStrength 
 				= 5+wave*5;
 			newRatbot.GetComponent<Ratbot>().health = 5+wave*2;
@@ -66,11 +71,18 @@ public class GameState : MonoBehaviour
 		wave++;
 	}
 	public GameObject SpawnRatbot() {
+		// TODO: Convert this mess into a switch case
 		if (counts[(uint)CountIndex.gunThrower] < wave/3 
 			&& wave > 3
 		) {
 			counts[(uint)CountIndex.gunThrower]++;
 			return gunThrower;
+		}
+		if (counts[(uint)CountIndex.fastFucker] < wave/4 
+			&& wave > 2
+		) {
+			counts[(uint)CountIndex.fastFucker]++;
+			return fastFucker;
 		}
 		return ratbot;
 	}
