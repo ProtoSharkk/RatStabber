@@ -52,7 +52,11 @@ public class GameState : MonoBehaviour
 		for (uint _ = 0; _ <= wave; _++) {
 			GameObject newRatbot = Instantiate(
 				SpawnRatbot(),
-				Random.insideUnitCircle.normalized*20,
+				Random.insideUnitCircle.normalized*20
+				+ new Vector2 (
+					playerPosition.x,
+					playerPosition.y
+				),
 				Quaternion.identity
 			);
 			newRatbot.GetComponent<Ratbot>().damageStrength 
