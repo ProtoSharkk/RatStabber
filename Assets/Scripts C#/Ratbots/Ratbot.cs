@@ -7,21 +7,29 @@ public class Ratbot : MonoBehaviour
 	public float damageTimeoutSeconds;
 	public float health = 10;
 	float lastDamageTime;
-	GameState gameState;
-	GameObject player;
+
+	public static GameState gameState;
+	public static GameObject player;
 
     void Start() {
+		SetVars();
+    }
+
+	public void SetVars() {
 		// Set gameState and player objects
 		player = GameObject.FindGameObjectWithTag("Player");
 		gameState = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameState>();
-    }
+	}
 
     void Update() {
-		// Constantly move towards player
+		MoveTowardsPlayer();
+    }
+
+	public void MoveTowardsPlayer() {
 		Rigidbody2D controller = GetComponent<Rigidbody2D>();
 		Vector2 direction = (player.transform.position - transform.position).normalized;
 		controller.AddRelativeForce(direction*moveSpeed*Time.deltaTime);
-    }
+	}
 
 	void OnCollisionStay2D(Collision2D collision) {
 		// Deal damage when colliding with the player on a 0.5 second cooldown
