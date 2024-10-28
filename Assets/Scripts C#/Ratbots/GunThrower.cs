@@ -15,9 +15,13 @@ public class GunThrower : Ratbot
 	}
 
 	void ThrowGun() {
-		GameObject thrown = Instantiate(gun);
+		GameObject thrown = Instantiate(
+			gun,
+			transform.position,
+			Quaternion.identity
+		);
 		thrown.GetComponent<Rigidbody2D>().AddRelativeForce((
-			transform.position - player.transform.position
+			player.transform.position - thrown.transform.position
 		).normalized * throwSpeed);
 		thrown.GetComponent<Gun>().damageStrength = damageStrength;
 	}

@@ -52,7 +52,7 @@ MonoBehaviour:
   damageTimeoutSeconds: 0.5
   health: 10
   gun: {fileID: 5213001249979318174, guid: 98b57b15498e96a9c8fe56264ac2ef63, type: 3}
-  throwSpeed: 0
+  throwSpeed: 41.61
 --- !u!212 &480941680556316754
 SpriteRenderer:
   m_ObjectHideFlags: 0
