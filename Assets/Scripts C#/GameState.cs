@@ -8,12 +8,14 @@ public class GameState : MonoBehaviour
 	public GameObject ratbot;
 	public GameObject gunThrower;
 	public GameObject fastFucker;
+	public GameObject creeper;
 
-	int[] counts = new int[3];
+	int[] counts = new int[4];
 	enum CountIndex : uint {
 		ratbot = 0,
 		gunThrower = 1,
-		fastFucker = 2
+		fastFucker = 2,
+		creeper = 3
 	}
 
 	void Start() {
@@ -73,16 +75,22 @@ public class GameState : MonoBehaviour
 	public GameObject SpawnRatbot() {
 		// TODO: Convert this mess into a switch case
 		if (counts[(uint)CountIndex.gunThrower] < wave/3 
-			&& wave > 3
+			&& wave > 2
 		) {
 			counts[(uint)CountIndex.gunThrower]++;
 			return gunThrower;
 		}
 		if (counts[(uint)CountIndex.fastFucker] < wave/4 
-			&& wave > 2
+			&& wave > 3
 		) {
 			counts[(uint)CountIndex.fastFucker]++;
 			return fastFucker;
+		}
+		if (counts[(uint)CountIndex.creeper] < wave/6
+			&& wave > 4
+		) {
+			counts[(uint)CountIndex.creeper]++;
+			return creeper;
 		}
 		return ratbot;
 	}
