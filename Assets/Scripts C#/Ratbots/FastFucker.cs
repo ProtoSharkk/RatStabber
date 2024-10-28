@@ -6,7 +6,7 @@ public class FastFucker : Ratbot
 	bool attack = true;
 	void Update() {
 		if (attack)
-			MoveTowardsPlayer(moveSpeed*3);
+			MoveTowardsPlayer(moveSpeed*2);
 		else
 			MoveAwayFromPlayer(moveSpeed);
     }
@@ -26,5 +26,9 @@ public class FastFucker : Ratbot
 		attack = false;
 		yield return new WaitForSeconds (1F);
 		attack = true;
+	}
+	new void Damage (float hurtyAmount) {
+		RunAway();
+		base.Damage(hurtyAmount);
 	}
 }
