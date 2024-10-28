@@ -13,5 +13,9 @@ public class Gun : MonoBehaviour
 
 	void Update() {
 		transform.Rotate(new Vector3 (0, 0, Time.deltaTime * 1000));
+		if (Vector3.Distance(
+			transform.position,
+			GameObject.FindGameObjectWithTag("Player").transform.position
+		) > 20) Destroy(gameObject);
 	}
 }
