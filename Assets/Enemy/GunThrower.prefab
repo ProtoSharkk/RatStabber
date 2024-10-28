@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4344634732794346337}
+  - component: {fileID: 5639616099047780729}
   - component: {fileID: 480941680556316754}
-  - component: {fileID: 7989867763508548648}
   - component: {fileID: 8441426735084966298}
   - component: {fileID: 3449798187735636588}
   m_Layer: 0
-  m_Name: Ratbot
+  m_Name: GunThrower
   m_TagString: Ratbot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,6 +35,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5639616099047780729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398740452138961375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ebac0379db13f0c3932982bc0ebed28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1500
+  damageStrength: 10
+  damageTimeoutSeconds: 0.5
+  health: 10
+  gun: {fileID: 5213001249979318174, guid: 98b57b15498e96a9c8fe56264ac2ef63, type: 3}
+  throwSpeed: 500
 --- !u!212 &480941680556316754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90,22 +108,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7989867763508548648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398740452138961375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d75aac518cf9dca0b16bb5a2e347204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1500
-  damageStrength: 10
-  damageTimeoutSeconds: 0.5
-  health: 10
 --- !u!61 &8441426735084966298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -165,7 +167,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 15
+  m_LinearDamping: 10
   m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}

@@ -681,7 +681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   wave: 0
-  ratbot: {fileID: 398740452138961375, guid: 5887eeeb7c78eb5c7bf46c5893fd4846, type: 3}
+  ratbot: {fileID: 398740452138961375, guid: b1e1e6378fb12d47e989565896a737ef, type: 3}
   shop: {fileID: 6569104281457075541, guid: c0d23b24c9c882ef89013998dab29dea, type: 3}
 --- !u!4 &745837569
 Transform:

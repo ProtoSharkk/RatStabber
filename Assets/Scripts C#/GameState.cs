@@ -4,8 +4,16 @@ public class GameState : MonoBehaviour
 {
 	public State state;
 	public uint wave;
-	public GameObject ratbot;
 	public GameObject shop;
+	public GameObject ratbot;
+	public GameObject gunThrower;
+
+	int[] counts = new int[2];
+	enum CountIndex : uint {
+		ratbot = 0,
+		gunThrower = 1
+	}
+
 	void Start() {
 		OpenShop();
 	}
@@ -20,7 +28,9 @@ public class GameState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindGameObjectsWithTag("Ratbot").Length == 0 && state == State.Wave) {
+        if (GameObject.FindGameObjectsWithTag("Ratbot").Length == 0 
+			&& state == State.Wave
+		) {
 			OpenShop();
 		}
     }
@@ -34,16 +44,34 @@ public class GameState : MonoBehaviour
 		// Spawn ratbots around the player
 		// Amount, health, and damage scale with waves
 		state = State.Wave;
-		Vector3 playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
+		Vector3 playerPosition 
+			= GameObject
+			.FindGameObjectWithTag("Player")
+			.transform
+			.position;
 		for (uint _ = 0; _ <= wave; _++) {
 			GameObject newRatbot = Instantiate(
-				ratbot,
-				Random.insideUnitCircle.normalized*20,
+				SpawnRatbot(),
+				Random.insideUnitCircle.normalized*20
+				+ new Vector2 (
+					playerPosition.x,
+					playerPosition.y
+				),
 				Quaternion.identity
 			);
-			newRatbot.GetComponent<Ratbot>().damageStrength = 5+wave*5;
+			newRatbot.GetComponent<Ratbot>().damageStrength 
+				= 5+wave*5;
 			newRatbot.GetComponent<Ratbot>().health = 5+wave*2;
 		}
 		wave++;
+	}
+	public GameObject SpawnRatbot() {
+		if (counts[(uint)CountIndex.gunThrower] < wave/3 
+			&& wave > 3
+		) {
+			counts[(uint)CountIndex.gunThrower]++;
+			return gunThrower;
+		}
+		return ratbot;
 	}
 }

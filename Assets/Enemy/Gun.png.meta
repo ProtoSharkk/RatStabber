@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4f95fc305283dda448b5386fe8172f8f
+guid: e702bce75f9e4df8ea233b25756258da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4827719251672435245
-    second: roborat_0
+      213: 6013433716489236182
+    second: pngtree-weapon-gun-flat-icon-handgun-png-image_4933503_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roborat_0
+      name: pngtree-weapon-gun-flat-icon-handgun-png-image_4933503_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 37
+        y: 88
+        width: 286
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d5ffb04bee700db0800000000000000
-      internalID: -4827719251672435245
+      spriteID: 6dea2b7ca12047350800000000000000
+      internalID: 6013433716489236182
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      roborat_0: -4827719251672435245
+      pngtree-weapon-gun-flat-icon-handgun-png-image_4933503_0: 6013433716489236182
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
