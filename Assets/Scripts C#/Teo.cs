@@ -94,9 +94,21 @@ public class Teo : MonoBehaviour
 		).normalized * dashDistance);
 		// Wait 0.2 seconds before ending the dash
 		yield return new WaitForSeconds(0.2F);
-		// Re enable collision and linearDamping after dash complete
+		// Re enable collision and linearDamping after dash
 		dashing = false;
-		collider.enabled = true;
 		controller.linearDamping = 15;
+		// Push enemies away at end of dash
+		foreach (Collider2D hit in Physics2D.OverlapCircleAll(
+			transform.position, 3
+		)) {
+			if (hit.tag != "Ratbot") continue;
+			hit.GetComponent<Rigidbody2D>().AddRelativeForce(
+				(hit.transform.position - transform.position)
+					.normalized * dashDistance
+			);
+		}
+		// Don't take damage at end of dash
+		yield return new WaitForSeconds(0.2F);
+		collider.enabled = true;
 	}
 }
