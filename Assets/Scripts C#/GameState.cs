@@ -73,6 +73,7 @@ public class GameState : MonoBehaviour
 		wave++;
 	}
 	public GameObject SpawnRatbot() {
+		return creeper;
 		// TODO: Convert this mess into a switch case
 		if (counts[(uint)CountIndex.gunThrower] < wave/3 
 			&& wave > 2
