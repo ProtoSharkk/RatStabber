@@ -1,5 +1,43 @@
 # RatStabber
 
+![TeoSword_clear](https://github.com/user-attachments/assets/5cc699a3-c4a2-47c5-9d7f-10f8546ad48f)
+
+### Fight off the ratbots and save the rat cities as the hunky man Teo himself! (and all the goofy ai generated images of him and everyone else)
+
+
+## LORE:
+After successfully defeating the Paulbots, the rat took components of the Paulbots and improved the design to create the rat bots. He could finally get revenge on Paul for the destruction of his kind. However, the Paul Bots managed to regain consciousness inside of the new and improved Rat Bots, making the Ratbots turn against the rat, taking his weapons and his last hopes of defeating Paul. You (Teo) have arrived to protect the rat and help him figure out a way to stop the now evil rat bots and discover the dark, hidden secrets while ending this war once and for all.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## And that's the game... I guess...
+
 ### Alright, Here's the Basic Vision:
 
 - The Player (Teo) moves around an infinite field with the camera following the player
@@ -39,7 +77,7 @@
 - [x] Wave spawns enemies
 - [x] Detect when wave ends
 - [x] Activate new waves after powerup has been chosen by player
-- [ ] Dash ability
+- [x] Dash ability
 
 ### Enemy:
 - [x] All Enemies have simple pathfinding towards the player
@@ -60,34 +98,29 @@
 
 ### In-Game UI:
 - [x] Player health on bottom left
-- [ ] Round / Wave on bottom left (?)
+- [x] Round / Wave on bottom left (?)
 - [ ] Maybe show enemy remaining count? (We can make a hard mode that removes UI except health)
 - [ ] Upon round end, pop-up menu for selecting powerup
     - [x] Damage
-    - [ ] Attack distance
-    - [ ] Attack range
-    - [ ] Attack cooldown
+    - [x] Attack distance
+    - [x] Attack range
+    - [x] Attack cooldown
     - [x] Health
     - [x] Speed
-    - [ ] Dash cooldown
-    - [ ] Dash distance
+    - [x] Dash cooldown
+    - [x] Dash distance
      
 - [ ] (Only an idea for now) Have a status bar at the bottom right to show your current stats 
 
 
 ### UI / AUDIO:
-- [ ] Menu Screen
+- [x] Menu Screen
 - [ ] Pause Screen
     - [ ] Option for returning to main menu / resume
-- [ ] Menu Music
-- [ ] Level Music
-- [ ] A section where the player can view unlocked lore by completing more of the game
-
-      
-
-## LORE:
-After successfully defeating the Paul bots, the rat improved upon the design to create the rat bots. He could finally get revenge on Paul for the destruction of his kind. However, the Paul Bots managed to regain consciousness inside of the new and improved Rat Bots, in-turn making the Ratbots turn against the rat, taking his weapons and his last hopes of defeating Paul as well. You (Teo) have arrived to protect the rat and help him figure out a way to stop the now evil rat bots and put an end to this war once and for all.
-
+- [x] Menu Music
+- [x] Level Music
+- [x] A section where the player can view unlocked lore by completing more of the game
+    - [ ] LORE GETS UNLOCKED EVERY 10 ROUNDS BEATEN + BOSS BEATEN
 
 
 
